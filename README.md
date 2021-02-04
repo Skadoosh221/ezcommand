@@ -17,7 +17,7 @@ Then you put in a function you want to use along with a name and put the paramet
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.";
+  std::cout << "Oh hi mark.\n";
 }
 
 void main() {
@@ -34,7 +34,7 @@ And then you can call it using something like this:
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.";
+  std::cout << "Oh hi mark.\n";
   std::cout << "You say: " << param[0];
 }
 
@@ -55,7 +55,7 @@ If you want to have user input instead you can use:
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.";
+  std::cout << "Oh hi mark.\n";
   std::cout << "You say: " << param[0];
 }
 
