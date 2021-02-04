@@ -14,6 +14,7 @@ Then you put in a function you want to use along with a name and put the paramet
 ```cpp
 #include "ezcommand.h"
 #include <iostream>
+CommandAPI cm;
 
 void test(vector<string> param) {
   std::cout << "Oh hi mark.";
@@ -30,6 +31,7 @@ And then you can call it using something like this:
 ```cpp
 #include "ezcommand.h"
 #include <iostream>
+CommandAPI cm;
 
 void test(vector<string> param) {
   std::cout << "Oh hi mark.";
@@ -50,6 +52,7 @@ If you want to have user input instead you can use:
 ```cpp
 #include "ezcommand.h"
 #include <iostream>
+CommandAPI cm;
 
 void test(vector<string> param) {
   std::cout << "Oh hi mark.";
