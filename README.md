@@ -75,4 +75,41 @@ void main() {
 	cm.UseCommand(cmd, params);
 }
 ```
-Well great job now you can become the EZ EXPERT!
+Here is another example:
+```cpp
+#include "ezcommand.h"
+using namespace std;
+CommandAPI cm;
+int kd = 0;
+
+// Command Functions
+void test(vector<string> params) {
+	for (auto t : params) {
+		kd += stoi(t);
+	}
+}
+
+void test2(vector<string> params) {
+	for (auto t : params) {
+		kd -= stoi(t);
+	}
+}
+
+// MAIN
+int main() {
+	cm.PushCommand(test, "add");
+	cm.PushCommand(test2, "sub");
+
+	string command;
+	vector<string> params;
+
+	while (1) {
+		cout << "Your command sir: ";
+		cm.GetCommandInput(command, params);
+		cm.UseCommand(command, params);
+		cout << kd << endl;
+	}
+
+	return 0;
+}
+```
