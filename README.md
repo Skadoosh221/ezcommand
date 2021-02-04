@@ -55,21 +55,24 @@ If you want to have user input instead you can use:
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.\n";
-  std::cout << "You say: " << param[0];
+	std::cout << "Oh hi mark.\n";
+	std::cout << "You say: ";
+	for (auto t : param) {
+		std::cout << t << " ";
+	}
 }
 
 void main() {
-  string cmd;
-  vector<string> params;
+	string cmd;
+	vector<string> params;
 
-  // Puts the command into a functionlist to be used.
-  cm.PushCommand(test, "test_command_name");
-  
-  // This will get the input of the user and store their command and parameters in cmd and params respectively.
-  cm.GetCommandInput(cmd, params);
-  
-  cm.UseCommand(cmd, params);
+	// Puts the command into a functionlist to be used.
+	cm.PushCommand(test, "say");
+
+	// This will get the input of the user and store their command and parameters in cmd and params respectively.
+	cm.GetCommandInput(cmd, params);
+
+	cm.UseCommand(cmd, params);
 }
 ```
 Well great job now you can become the EZ EXPERT!
