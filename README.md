@@ -8,7 +8,7 @@ First you need to initialize it.
 CommandAPI cm;
 ```
 
-Then you put in a function you want to use along with a name and put the parameter as vector <string> (vector <string> is always neccesary and you will need to convert it to the type you want). e.g:
+Then you put in a function you want to use along with a name and put the parameter as ```vector<string>``` (```vector<string>``` is always neccesary and you will need to convert it to the type you want). e.g:
   
 ```cpp
 #include <iostream>
