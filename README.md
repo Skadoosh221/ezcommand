@@ -61,7 +61,7 @@ void test(vector<string> param) {
 
 void main() {
   string cmd;
-	vector<string> params;
+  vector<string> params;
 
   // Puts the command into a functionlist to be used.
   cm.PushCommand(test, "test_command_name");
@@ -73,4 +73,3 @@ void main() {
 }
 ```
 Well great job now you can become the EZ EXPERT!
-```
