@@ -2,15 +2,17 @@
 It makes it easy to access/call functions by user input.
 
 ## How to use
-First you need to initialize it.
+First you need to initialize it and include the header.
   
 ```cpp
+#include "ezcommand.h"
 CommandAPI cm;
 ```
 
 Then you put in a function you want to use along with a name and put the parameter as ```vector<string>``` (```vector<string>``` is always neccesary and you will need to convert it to the type you want). e.g:
   
 ```cpp
+#include "ezcommand.h"
 #include <iostream>
 
 void test(vector<string> param) {
@@ -26,6 +28,7 @@ void main() {
 And then you can call it using something like this:
 
 ```cpp
+#include "ezcommand.h"
 #include <iostream>
 
 void test(vector<string> param) {
@@ -45,6 +48,7 @@ void main() {
 
 If you want to have user input instead you can use:
 ```cpp
+#include "ezcommand.h"
 #include <iostream>
 
 void test(vector<string> param) {
