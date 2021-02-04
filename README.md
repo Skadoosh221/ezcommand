@@ -1,5 +1,5 @@
 # EZcommand
-It makes it easy to access/call functions by user input.
+It makes it easy to access/call functions by user input. For C++ users.
 
 ## How to use
 First you need to initialize it and include the header.
