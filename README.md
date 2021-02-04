@@ -17,12 +17,12 @@ Then you put in a function you want to use along with a name and put the paramet
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.\n";
+	std::cout << "Oh hi mark.\n";
 }
 
 void main() {
-  // Puts the command into a functionlist to be used.
-  cm.PushCommand(test, "test_command_name");
+	// Puts the command into a functionlist to be used.
+	cm.PushCommand(test, "test_command_name");
 }
 ```
 
@@ -34,17 +34,17 @@ And then you can call it using something like this:
 CommandAPI cm;
 
 void test(vector<string> param) {
-  std::cout << "Oh hi mark.\n";
-  std::cout << "You say: " << param[0];
+	std::cout << "Oh hi mark.\n";
+	std::cout << "You say: " << param[0];
 }
 
 void main() {
-  string command = "test_command_name";
-  vector<string> params {"I'm so cool."};
+	string command = "test_command_name";
+	vector<string> params{ "I'm so cool." };
 
-  // Puts the command into a functionlist to be used.
-  cm.PushCommand(test, "test_command_name");
-  cm.UseCommand(command, params);
+	// Puts the command into a functionlist to be used.
+	cm.PushCommand(test, "test_command_name");
+	cm.UseCommand(command, params);
 }
 ```
 
