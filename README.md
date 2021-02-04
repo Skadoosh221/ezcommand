@@ -38,7 +38,7 @@ void test(vector<string> param) {
 
 void main() {
   string command = "test_command_name";
-	vector<string> params {"I'm so cool."};
+  vector<string> params {"I'm so cool."};
 
   // Puts the command into a functionlist to be used.
   cm.PushCommand(test, "test_command_name");
